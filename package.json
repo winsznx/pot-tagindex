@@ -1,0 +1,18 @@
+{
+  "name": "@winsznx/pot-tagindex",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Aggregated tag index for Pot — derives the live tag cloud from on-chain Tagged events. Companion package to @winsznx/potforge.",
+  "license": "MIT",
+  "author": "winsznx",
+  "homepage": "https://github.com/winsznx/pot-tagindex",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/winsznx/pot-tagindex.git"
+  },
+  "keywords": ["pot", "tags", "celo", "stacks", "index"],
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}
