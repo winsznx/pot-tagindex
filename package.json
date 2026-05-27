@@ -1,8 +1,8 @@
 {
-  "name": "@winsznx/pot-tagindex",
+  "name": "@winsznx/potforge",
   "version": "0.1.0",
   "private": true,
-  "description": "Aggregated tag index for Pot — derives the live tag cloud from on-chain Tagged events. Companion package to @winsznx/potforge.",
+  "description": "TypeScript SDK for Pot — stablecoin fundraisers on Celo (cUSD) + Stacks (sBTC). Contract bindings, share helpers, badge metadata.",
   "license": "MIT",
   "author": "winsznx",
   "homepage": "https://github.com/winsznx/pot-tagindex",
@@ -10,7 +10,16 @@
     "type": "git",
     "url": "https://github.com/winsznx/pot-tagindex.git"
   },
-  "keywords": ["pot", "tags", "celo", "stacks", "index"],
+  "keywords": [
+    "pot",
+    "fundraiser",
+    "celo",
+    "stacks",
+    "cusd",
+    "sbtc",
+    "viem",
+    "clarity"
+  ],
   "type": "module",
   "engines": {
     "node": ">=20"
