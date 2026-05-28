@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/winsznx/pot-tagindex.git"
   },
+  "bugs": {
+    "url": "https://github.com/winsznx/pot-tagindex/issues"
+  },
   "keywords": [
     "pot",
     "fundraiser",
@@ -21,6 +24,51 @@
     "clarity"
   ],
   "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./celo": {
+      "types": "./dist/celo/index.d.ts",
+      "import": "./dist/celo/index.js",
+      "require": "./dist/celo/index.cjs"
+    },
+    "./stacks": {
+      "types": "./dist/stacks/index.d.ts",
+      "import": "./dist/stacks/index.js",
+      "require": "./dist/stacks/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "peerDependencies": {
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.0",
+    "viem": "^2.21.0",
+    "vitest": "^2.1.0"
+  },
   "engines": {
     "node": ">=20"
   }
